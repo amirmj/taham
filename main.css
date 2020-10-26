@@ -1,0 +1,228 @@
+
+@font-face {
+    src: url("Resource/Fonts/Roboto/Roboto-Regular.ttf");
+    font-family: Roberto;
+}
+
+@font-face {
+    src: url("Resource/Fonts/Montserrat/Montserrat-SemiBold.ttf");
+    font-family: Montserrat;
+}
+@font-face {
+    src: url("Resource/Fonts/Montserrat/Montserrat-Light.ttf");
+    font-family: MontserratLight;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("Resource/Fonts/Montserrat/Montserrat-Bold.ttf");
+    font-family: MontserratBold;
+}
+
+@font-face {
+    src: url("Resource/Fonts/Montserrat/Montserrat-Thin.ttf");
+    font-family: MontserratThin;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("Resource/Fonts/Lato/Lato-Light.ttf");
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("Resource/Fonts/WebYekan.woff");
+    font-family: Yekan;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {font-family: "Programme-Regular";
+    src: url("Resource/Fonts/Programme/615ebd2bd72c443cdfe3991532f0df4f.eot"); /* IE9*/
+    src: url("Resource/Fonts/Programme/615ebd2bd72c443cdfe3991532f0df4f.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Resource/Fonts/Programme/615ebd2bd72c443cdfe3991532f0df4f.woff2") format("woff2"), /* chrome、firefox */
+    url("Resource/Fonts/Programme/615ebd2bd72c443cdfe3991532f0df4f.woff") format("woff"), /* chrome、firefox */
+    url("Resource/Fonts/Programme/615ebd2bd72c443cdfe3991532f0df4f.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("Resource/Fonts/Programme/615ebd2bd72c443cdfe3991532f0df4f.svg#Programme-Regular") format("svg"); /* iOS 4.1- */
+}
+
+/*##################################Default#######################################*/
+html{
+    font-size: 10px;
+}
+nav{
+    padding: 1rem 3rem;
+    background: #272727;
+    display: flex;
+    justify-content: space-between;
+}
+ ul {
+     margin: 0;
+     padding: 0;
+}
+ ul li {
+     display: inline-block;
+     font-family: Montserrat, sans-serif;
+     list-style: none;
+     position: relative;
+}
+ ul li a{
+    display: block;
+    text-decoration: none;
+    color: #a6a7f1;
+    padding: 1.8rem;
+    font-size: 1.2em;
+    text-align: center;
+}
+h1,h2{
+    font-family: MontserratLight,sans-serif;
+    font-size: 5.5rem;
+    text-transform: capitalize;
+}
+p{
+    font-family: Lato,sans-serif;
+    font-size: 1.85rem;
+}
+
+/*############################Custom Styles#################################*/
+nav .list2 a i{
+    font-size: 1.1em;
+    margin-top: .7rem;
+    padding: .99rem;
+    color: #a6a7f1;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    background-color: #4144fa;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , 0);
+    height: 1px;
+    width: 45px;
+}
+.wrapper{
+    background-color: #8fadee;
+    display: flex;
+    padding: 4rem 6rem;
+}
+.wrapper .bio,.image{
+    flex: 1;
+}
+.wrapper .bio .discription{
+    height: 100%;
+    position: relative;
+    padding-right: 5rem;
+    text-align: left;
+
+}
+.wrapper .bio .discription::before{
+    content: "";
+    position: absolute;
+    background-color: #445ee2;
+    right: 0;
+    top: 8%;
+    height: 85%;
+    width: 3px;
+}
+.wrapper .image .taham{
+    text-align: right;
+}
+.wrapper .bio .discription .title{
+    color: #222222;
+
+}
+.wrapper .bio .discription .explain{
+    width: 100%;
+    height: 100%;
+    word-spacing: .35em;
+    line-height: 1.5;
+    color: #22262f;
+}
+.wrapper .image img{
+    width: 35rem;
+    box-shadow: 0 0 1px 1px #22262f;
+    border-radius: 50%;
+    transition: transform .4s;
+    margin-top: 3.5rem;
+}
+.wrapper .image .taham img:hover{
+    transform: scale(1.1);
+}
+.w3-row-padding .title{
+   margin: 0 0 4rem 2rem;
+    color: #8fadee;
+}
+.w3-quarter .descript{
+    margin-top: 1.8rem;
+}
+.w3-quarter h3{
+    font-family: Roberto,sans-serif;
+    color: #22262f;
+}
+.w3-quarter p{
+    font-family: MontserratLight,sans-serif;
+}
+
+.w3-container h3{
+    font-size: 2rem;
+    color: #000;
+}
+.w3-container h4{
+    color: #AAAAAA;
+}
+.w3-container p{
+    font-size: 2rem;
+}
+.w3-container h3,h4{
+    text-transform: capitalize;
+    font-family:Programme-Regular,sans-serif;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.w3-content h2{
+    font-size: 2em;
+}
+.w3-content .w3-twothird p{
+
+}
+.w3-content .w3-twothird p span{
+    color: #7d8fe8;
+    font-family: Programme-Regular,sans-serif;
+}
+
+.continue{
+    width: 500px;
+    min-height: 400px;
+    margin: auto;
+}
+/*################################Mobile###############################*/
+@media screen and (max-width: 890px){
+    nav , .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .list1 li , .list2 a{
+        font-size: 2vw;
+    }
+    .wrapper .bio{
+        order: 1;
+        margin-top: 5.5rem;
+    }
+    .wrapper .bio .discription{
+        text-align: center;
+        padding: 0;
+    }
+    .wrapper .bio .discription::before{
+        top: -10%;
+        right: 17%;
+        width: 70%;
+        height: 3px;
+    }
+
+}
+
+
+
